@@ -31,3 +31,52 @@ body {
     text-wrap: balance;
   }
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+section p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  color: #666;
+  font-size: 0.9rem;
+}
+
