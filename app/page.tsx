@@ -1,113 +1,55 @@
-import Image from "next/image";
+import React from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import Logo from '../public/next.svg'; // Assicurati di aggiungere il tuo logo in assets
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <>
+      <Head>
+        <title>Lorenzo Regalzi - Sviluppatore Frontend e Backend | Next.js, React, Node.js</title>
+        <meta name="description" content="Sono Lorenzo Regalzi, uno sviluppatore frontend e backend specializzato in Next.js, React e Node.js. Scopri i miei servizi e contattami per realizzare il tuo progetto web." />
+        <meta name="keywords" content="Lorenzo Regalzi, sviluppatore frontend, sviluppatore backend, Next.js, React, Node.js, progetti web" />
+        <meta name="author" content="Lorenzo Regalzi" />
+        <link rel="canonical" href="https://www.lorenzoregalzi.com" />
+      </Head>
+      <div className="container mx-auto p-4">
+        <header>
+          <Image src={Logo} alt="Lorenzo Regalzi Logo" width={200} height={100} />
+          <h1 className="text-4xl font-bold text-gray-800 mt-8">Sviluppatore Frontend e Backend</h1>
+          <p className="text-lg text-gray-600">Specializzato in Next.js, React e Node.js</p>
+        </header>
+        <main>
+          <section>
+            <h2 className="text-3xl font-bold text-gray-800 mt-12">I miei servizi</h2>
+            <p className="text-lg text-gray-600">Sono un esperto sviluppatore frontend e backend, in grado di realizzare soluzioni web personalizzate e di alta qualità. I miei servizi includono:</p>
+            <ul className="list-disc list-inside text-lg text-gray-600 mt-4">
+              <li>Progettazione e sviluppo di siti web reattivi e user-friendly utilizzando Next.js, React e altri framework frontend</li>
+              <li>Creazione di API robuste e scalabili con Node.js e Express per supportare le applicazioni frontend e mobile</li>
+              <li>Sviluppo di applicazioni web e mobile basate su database relazionali e non relazionali</li>
+              <li>Ottimizzazione delle prestazioni e della sicurezza del sito web per garantire una migliore esperienza utente</li>
+              <li>Mantenimento e aggiornamento continuo delle applicazioni per adattarsi ai cambiamenti nel panorama tecnologico</li>
+            </ul>
+          </section>
+          <section>
+            <h2 className="text-3xl font-bold text-gray-800 mt-12">Progetti recenti</h2>
+            <p className="text-lg text-gray-600">Ecco alcuni dei miei progetti recenti che illustrano le mie capacità e il mio approccio allo sviluppo web:</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+              {/* Aggiungi qui una galleria o una lista dei tuoi progetti recenti */}
+            </div>
+          </section>
+          <section>
+            <h2 className="text-3xl font-bold text-gray-800 mt-12">Contattami</h2>
+            <p className="text-lg text-gray-600">Se hai un progetto interessante e hai bisogno di un esperto sviluppatore per realizzarlo, non esitare a contattarmi. Sarei felice di discutere dei dettagli e fornirti una soluzione su misura per le tue esigenze.</p>
+            <a href="mailto:info@lorenzoregalzi.com" className="text-blue-500 hover:underline mt-4 block">info@lorenzoregalzi.com</a>
+          </section>
+        </main>
+        <footer className="mt-12 border-t pt-8">
+          <p className="text-sm text-gray-500">© 2024 Lorenzo Regalzi. Tutti i diritti riservati.</p>
+        </footer>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
-}
+};
+
+export default Home;
