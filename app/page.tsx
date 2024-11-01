@@ -26,7 +26,7 @@ const HomePage = () => {
         <div className='card-container'>
           <div className='card'>
             <h3 className='h3'>Crafting Digital Experiences</h3>
-            <p className='paragraph'>I transform brilliant ideas into real solutions. As a passionate Front End Developer 💻 skilled in modern web technologies like Angular, React, Vue, and Next.js, I bring a strong foundation to my work, currently pursuing a Bachelor's Degree in Modern Computer Science 🎓.
+            <p className='paragraph'>I transform brilliant ideas into real solutions. As a passionate Front End Developer 💻 skilled in modern web technologies like Angular, React, Vue, and Next.js, I bring a strong foundation to my work, currently pursuing a Bachelor`s Degree in Modern Computer Science 🎓.
               At MyFamily, I played a key role in developing Techla, a mobile app 📱 that improved communication with CNC engraving machines, significantly boosting revenue. My experience at AITEM involved enhancing LAIKA, an AI-driven web application 🤖 for veterinarians, while my freelance work focused on modernizing outdated systems to elevate user engagement.
               My mission is to create intuitive, responsive web applications 🌟 that enhance user experiences, driven by the belief that technology should simplify lives and improve interactions. Committed to continuous learning 📚 in the ever-evolving landscape of software development, I aim to collaborate with innovative teams that push the boundaries of technology and create meaningful impact.
             </p>            
