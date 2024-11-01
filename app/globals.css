@@ -1,82 +1,97 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
+
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: fff;
+  --background-start-rgb: fff;
+  --background-end-rgb: fff;
+  --font-primary: 'Helvetica Neue', Arial, sans-serif;
+  --color-primary: #1d1d1f; /* Un grigio molto scuro per il testo principale */
+  --color-secondary: #3a3a3c; /* Grigio secondario per un contrasto minore */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: #fff;
+    --background-start-rgb: fff;
+    --background-end-rgb: fff;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  margin: 0;
+  padding: 0;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Stili per le intestazioni */
+.h1 {
+  font-size: 3rem; /* 48px */
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+.h2 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
+.h3 {
+  font-size: 1.75rem; /* 28px */
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  color: #333;
+.h4 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
 }
 
-header p {
-  font-size: 1.2rem;
-  color: #666;
+.h5 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
 }
 
-section {
-  margin-bottom: 40px;
+.h6 {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
 }
 
-section h2 {
-  font-size: 2rem;
-  color: #333;
+/* Stile per paragrafi */
+.paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
 }
 
-section p {
-  font-size: 1.1rem;
-  color: #666;
+.icon {
+  width: 64px;
+  height: 64px;
 }
 
-ul {
-  list-style-type: disc;
+.contact {
+  width: 200px;
+  height: 100px;
 }
-
-footer {
-  text-align: center;
-  margin-top: 60px;
-  padding-top: 20px;
-  border-top: 1px solid #ccc;
-  color: #666;
-  font-size: 0.9rem;
-}
-
