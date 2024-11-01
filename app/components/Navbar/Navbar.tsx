@@ -5,11 +5,11 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <h1>Lorenzo Regalzi</h1>
+      <Link href="/"><h1>Lorenzo Regalzi</h1></Link>
       </div>
       <ul className={styles.navLinks}>
         <li>
-          <Link href="#section1">Blog</Link>
+          <Link href="blog">Blog</Link>
         </li>
       </ul>
     </nav>

@@ -1,6 +1,6 @@
 .banner {
     width: 100%;
-    height: 60vh;
+    min-height: 60vh;
     padding: 80px;
     display: flex;
     align-items: center;
